@@ -1,0 +1,540 @@
+/* Colors were obtained using the color picker tool in mac pages */
+:root {
+    --orangeycolor: #CEA63D;
+    --faintgray: #EAECF0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1em;
+    background-color: white;
+    margin: 0;
+}
+
+header{
+    background-color: #181B25;
+    color: white;
+    padding: 3em;
+    margin: 0;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing:border-box;
+    font-size: 0.5em;
+    font-family: 'Courier New', monospace;
+    font-weight: normal;
+}
+
+nav {
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 0.2em;
+    font-size: 1.3em;
+    border-radius: 2px;
+    padding: 0.75em;
+}
+
+nav a:hover {
+    background-color: #38485C;
+    color: white;
+}
+header h1 span {
+    color: var(--orangeycolor);
+    margin-right: 0.25em;
+}
+
+#hero {
+    background-color: #282D3E;
+    color: white;
+    padding: 2em 0 2.8em 6em;
+    margin: 0;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    height: 25%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#hero h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2em;
+    max-width: 5em;
+    font-weight: 150;
+    padding: 0 0 0 5rem;
+    margin-bottom: 0.8rem;
+}
+
+#hero p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75em;
+    max-width: 20rem;
+    padding: 0 0 0 5rem;
+    margin: 0;
+    color: #8F9DBE;
+    line-height: 1.3;
+}
+
+#cta {
+    background-color: var(--orangeycolor);
+    color: #310025;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 0.6em;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.container {
+    background-color: #F3F4F7;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container h2 {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 1.2em;
+    color: #000035;
+    text-align: left;
+    margin: 1.5em 0 1.5em 1em;
+    font-weight: lighter;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+.thumbnail {
+    padding: 2.5em 1em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #F3F4F7;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product {
+    width: 23%;
+    background-color: white;
+    border: 1px solid #E6E7EB;
+    border-top: 3px solid #3B6B61;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.product:hover {
+    border: 1px solid #545559;
+    border-top: 3px solid var(--orangeycolor);
+    box-shadow: 0 -1px 0 0 #545559; /* Googled how to have two borders in css and used the method shown by the Google AI overview*/
+}
+
+.product h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7em;
+    color: #000D3E;
+    margin: 1.5em 1.2em 0.25em 1.2em;
+    font-weight: light;
+}
+
+.product p {
+    color: #5B718A;
+    font-size: 0.75em;
+    margin: 0em 1.2em 1.5em 1.2em;
+}
+
+.product-button {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.6em;
+    font-size: 0.75em;
+    margin: 0 1.25em 1.25em 1.25em;
+    color: #000D3E;
+}
+
+.product-button:hover {
+    color: white;
+    background-color: #181B25;
+}
+
+.white-block {
+    background-color: white;
+    padding: 1em 2em 1em 1em;
+    margin: 0;
+    border-top: 1px solid #EAECF0;
+    border-bottom: 1px solid #EAECF0;
+}
+
+.white-block h2 {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 1.2em;
+    color: #000035;
+    text-align: left;
+    margin: 1em 0 1.2em 0;
+    font-weight: lighter;
+}
+
+.white-block p {
+    text-align: left;
+    font: sans-serif;
+    color: #5B718A;
+    max-width: 60%;
+    font-size: 0.75em;
+    line-height: 1.3;
+    font-weight: 350;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #181B25;
+    font-family: 'DM Sans', sans-serif;
+    padding: 1em 1em 1em 1em;
+}
+
+.footer-links {
+    display: flex;
+    color:white;
+    font-size: 1em;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 8em;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+    font-family: sans-serif;
+    font-size: 0.65em;
+    padding-bottom: 2em;
+}
+
+.link-column a {
+    color: #8F9DBE;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.link-column a:hover {
+    color: white;
+}
+
+.copyright {
+    font-size: 0.5em;
+    color: lightslategray;
+    padding-top: 0.5em;
+    border-top: 1px solid #2B2F3E;
+}
+
+/* About Page */
+
+#hero #about-hero {
+    max-width: 100%;
+    padding-left: 5rem;
+    margin: 0;
+}
+
+.gray-block {
+    margin: 0;
+    padding: 0 15%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: flex-start;
+    gap: 4em;
+    box-sizing: border-box;
+}
+
+.gray-block h2 {
+    margin: 2.5em 5em 2.5em 0;
+    min-width: 100px
+}
+
+.gray-block p {
+    font-family: sans-serif;
+    color: gray;
+    font-size: 0.5em;
+    width: 60%;
+    line-height: 1.3;
+    margin: 4em 0 2em 0;
+}
+
+.values-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15%;
+    padding-bottom: 2em;
+
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1em;
+}
+
+.value {
+    width: 30%;
+    background-color: #F3F4F7;
+    border: 1px solid var(--faintgray);
+    border-radius: 2px;
+    padding: 1em;
+    font-size: 1em;
+    padding-right: 0em;
+}
+
+.letter-icon{
+    background-color: #181B25;
+    color: white;
+    margin: 0.3em;
+    font-size: 1em;
+    padding: 0.1em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.letter-icon#Q {
+    color: var(--orangeycolor);
+}
+
+.letter-icon#S {
+    color: #375D56;
+}
+
+.value h3 {
+    font-size: 0.7em;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.value p {
+    color: gray;
+    margin: 0;
+    padding-right: 1em;
+    max-width: none;
+    font-size: 0.5em;
+    line-height: 1.3em;
+}
+
+.our-team {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    padding: 0 15%;
+}
+
+.our-team h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.our-team p {
+    margin: 0;
+    margin-right: 15%;
+    font-size: 0.6em;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.team-member {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    margin: 0.5em 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.team-member h4 {
+    font-size: 0.5em;
+    margin: 0.5em 0;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--orangeycolor);
+}
+
+.team-photo {
+    background-color: white;
+    border: 1px solid var(--faintgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+    height: 9em;
+    width: 9em;
+}
+
+.team-photo img {
+    max-height: 9em;
+    max-width: 9em;
+    object-fit: contain;
+    margin: 0;
+}
+
+.team-member p {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.our-journey {
+    padding: 0 15%;
+    margin: 0;
+}
+
+.our-journey h2 {
+    text-align: center;
+}
+
+.timeline {
+    width: 70%;
+    border-left: 2px solid gray;
+    margin-left: 27%;
+}
+
+.timeline-text h3 {
+    font-family: monospace;
+    color: #3B6B61;
+    font-size: 0.5em;
+}
+
+.timeline-text p {
+    color: gray;
+    font-size: 0.5em;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.git {
+    padding: 0 15%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.git h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    margin: 1.25em 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1.5em;
+    width: 100%;
+    margin: 0;
+}
+
+.contact h3 {
+    font-size: 0.7em;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.contact {
+    margin: 0;
+    color: gray;
+    font-size: 0.5em;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid var(--faintgray);
+    width: 30%;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.path {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.5em;
+    color:gray;
+    padding-left: 7.5%;
+    border-bottom: 1px solid var(--faintgray)
+}
+
+.product-showcase {
+    display: flex;
+    margin: 0;
+    align-items: flex-start;
+    background-color: #F3F4F7;
+}
+
+.product-pictures {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7.5%;
+}
+
+#big-picture {
+    margin: 1em 0 0.5em 0;
+    background-color: #F3F4F7;
+}
+
+.small-pictures {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-pictures img {
+    height: 30%;
+    width: 31.5%;
+}
+
+.product-desc {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.product-desc h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: 300;
+    padding-left: 1em;
+}
