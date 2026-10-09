@@ -536,5 +536,133 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.25em;
     font-weight: 300;
-    padding-left: 1em;
+    padding-left: 2rem;
+    width: 25%;
+    margin-bottom: 0;
 }
+
+.product-desc .stars {
+    color: var(--orangeycolor);
+    font-size: 0.5em;
+    padding-left: 2rem;
+}
+
+.price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.25em;
+    color: black;
+    font-weight: 550;
+    padding: 1.25rem 2rem;
+}
+
+.product-desc p {
+    padding: 0;
+    padding-left: 2rem;
+    color: gray;
+    font-size: 0.7em;
+    margin: 0;
+    padding-bottom: 2em;
+}
+
+fieldset.button-fields {
+    border: none;
+    padding: 0;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.sizes input {
+    appearance: none;
+    margin: 0;
+}
+
+.sizes input:checked + label {
+    background-color: darkgray;
+}
+
+.sizes label {
+    border: 1px solid darkgray;
+    border-radius: 2px;
+    padding: 0.3em;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.sizes label:hover {
+    background-color: darkgray;
+}
+
+.colors input {
+    appearance: none;
+    margin: 0;
+}
+
+.colors input[id="cream"] {
+    background-color: #EBE6D9;
+    border-radius: 50%;
+    font-size: 1em;
+    border: 1px solid gray;
+    padding: 10px;
+
+    &:checked {
+        border: 1px solid black;
+    }
+}
+
+.colors input[id="gray"] {
+    background-color: #3A3D44;
+    border-radius: 50%;
+    font-size: 1em;
+    border: 1px solid gray;
+    padding: 10px;
+
+    &:checked {
+        border: 1px solid black;
+    }
+}
+
+.colors input[id="blue"] {
+    background-color: #212B44;
+    border-radius: 50%;
+    font-size: 1em;
+    border: 1px solid gray;
+    padding: 10px;
+
+    &:checked {
+        border: 1px solid black;
+    }
+}
+
+.colors input[id="orange"] {
+    background-color: #B56831;
+    border-radius: 50%;
+    font-size: 1em;
+    border: 1px solid gray;
+    padding: 10px;
+
+    &:checked {
+        border: 1px solid black;
+    }
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.product-button {
+    background-color: var(--orangeycolor);
+    margin: 0;
+    padding: 1em;
+    font-size: 0.5em;
+    margin-left: 2rem;
+}
+
+.product-button[value="Add to Wishlist"] {
+    background-color: white;
+}
+
+.product-button[value="Add to Wishlist"]:hover {
+    background-color: gray;
+} 
