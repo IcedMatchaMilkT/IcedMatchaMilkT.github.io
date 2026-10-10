@@ -651,7 +651,7 @@ fieldset.button-fields {
     
 }
 
-.product-button {
+.p-button {
     background-color: var(--orangeycolor);
     margin: 0;
     padding: 1em;
@@ -659,10 +659,10 @@ fieldset.button-fields {
     margin-left: 2rem;
 }
 
-.product-button[value="Add to Wishlist"] {
+.p-button[value="Add to Wishlist"] {
     background-color: white;
 }
 
-.product-button[value="Add to Wishlist"]:hover {
+.p-button[value="Add to Wishlist"]:hover {
     background-color: gray;
 } 
