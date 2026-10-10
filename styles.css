@@ -1,3 +1,4 @@
+@import url('https://googleapis.com');
 /* Colors were obtained using the color picker tool in mac pages */
 :root {
     --orangeycolor: #CEA63D;
@@ -568,24 +569,27 @@ fieldset.button-fields {
     border: none;
     padding: 0;
     margin: 0;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem 1rem 2rem;
 }
 
 .sizes input {
     appearance: none;
     margin: 0;
+    position: absolute;
 }
 
 .sizes input:checked + label {
     background-color: darkgray;
+    color: black;
 }
 
 .sizes label {
-    border: 1px solid darkgray;
+    border: 1px solid #DBDDE2;
     border-radius: 2px;
-    padding: 0.3em;
+    padding: 1em;
     color: gray;
-    font-size: 0.8em;
+    font-size: 0.5em;
+    margin: 0;
 }
 
 .sizes label:hover {
@@ -601,7 +605,7 @@ fieldset.button-fields {
     background-color: #EBE6D9;
     border-radius: 50%;
     font-size: 1em;
-    border: 1px solid gray;
+    border: 1px solid #DBDDE2;
     padding: 10px;
 
     &:checked {
@@ -613,7 +617,7 @@ fieldset.button-fields {
     background-color: #3A3D44;
     border-radius: 50%;
     font-size: 1em;
-    border: 1px solid gray;
+    border: 1px solid #DBDDE2;
     padding: 10px;
 
     &:checked {
@@ -625,7 +629,7 @@ fieldset.button-fields {
     background-color: #212B44;
     border-radius: 50%;
     font-size: 1em;
-    border: 1px solid gray;
+    border: 1px solid #DBDDE2;
     padding: 10px;
 
     &:checked {
@@ -637,7 +641,7 @@ fieldset.button-fields {
     background-color: #B56831;
     border-radius: 50%;
     font-size: 1em;
-    border: 1px solid gray;
+    border: 1px solid #DBDDE2;
     padding: 10px;
 
     &:checked {
@@ -648,7 +652,13 @@ fieldset.button-fields {
 .action-buttons {
     display: flex;
     flex-direction: row;
-    
+    align-items: flex-start;
+    margin-left: 2rem;
+    border: 1px transparent white;
+}
+
+.p-button[value="Add to Cart"]:hover {
+    background-color: darkgoldenrod;
 }
 
 .p-button {
@@ -656,13 +666,169 @@ fieldset.button-fields {
     margin: 0;
     padding: 1em;
     font-size: 0.5em;
-    margin-left: 2rem;
+    border: none;
+    border-radius: 2px;
+    font-family: 'DM sans', sans-serif;
 }
 
 .p-button[value="Add to Wishlist"] {
     background-color: white;
+    margin-left: 1em;
+    border: 1px solid black;
 }
 
 .p-button[value="Add to Wishlist"]:hover {
     background-color: gray;
-} 
+}
+
+.quantity-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quantity-field .label {
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 1em;
+    display: block;
+}
+
+#quantity {
+    width: 8em;
+    height: 2em;
+    border: 1px solid #DBDDE2;
+    font-size: 0.5em;
+    padding: 0.3em;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.product-form .label {
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+fieldset legend.label{
+    margin: 0em;
+}
+
+.product-tabs-bar {
+    padding: 1em 7.5%;
+    background-color: #F3F4F7;
+}
+
+.product-tabs {
+    display: flex;
+    gap: 1em;
+    width: 85%;
+    border-top: 1px solid #DBDDE2;
+    border-bottom: 1px solid #DBDDE2;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 0.75em 0;
+    font-family: 'DM sans', sans-serif;
+    color: gray;
+    font-size: 0.7em;
+}
+
+.tab.desc {
+    color: black;
+    border-bottom: 1px solid var(--orangeycolor);
+}
+
+.product-details {
+    padding: 0 7.5%;
+    background-color: #F3F4F7;
+}
+
+.product-details h2, .customer-reviews h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.product-details p {
+    font-family: 'DM Sans', sans-serif;
+    color: gray;
+    font-size: 0.6em;
+    width: 47.5%;
+}
+
+.product-details h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.features-list {
+    font-size: 0.6em;
+    color: gray;
+    font-family: monospace;
+    padding-bottom: 2em;
+}
+
+.feature {
+    display: flex;
+    padding: 0.5em 0.5em;
+    border-bottom: 1px solid #DBDDE2;
+    width: 47.5%;
+}
+
+.feature-name {
+    width: 40%
+}
+
+.feature:last-child {
+    border-bottom: none;
+}
+
+.customer-reviews h2 {
+    padding: 0.5em 0;
+    width: 85%;
+}
+
+.customer-reviews {
+    background-color: #F3F4F7;
+    padding: 0.5em 7.5% 2em 7.5%;
+    border-top: 1px solid #DBDDE2;
+}
+
+.review {
+    border-top: 1px solid #DBDDE2;
+}
+
+.review:first-of-type {
+    border-top: none;
+}
+
+.review-header {
+    display: flex;
+    font-size: 0.6em;
+    gap: 1em;
+}
+
+.reviewer {
+    font-weight: bold;
+    padding-top: 0.5em;
+}
+
+.rating {
+    color: var(--orangeycolor);
+    font-size: 0.6em;
+    padding-top: 1em;
+}
+
+.date {
+    margin-left:auto;
+    font-family: monospace;
+    color: gray;
+    padding-top: 1em;
+}
+
+.review p {
+    font-size: 0.6em;
+    font-weight: 300;
+}
